@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <!-- android:background="@color/statuscolor"-->
+
+
+<!-- NOTES: ONLY THIS FRAGMENT HAS THE NAVIGATION BAR NOT ALL 3
+     ALSO: The Fragments are now the only thing we use, all fragments are just activities copied as fragments
+     so realistically we will be able to delete activities in the future.-->
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--android:background="@color/black"-->
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <ImageView
+        android:id="@+id/img"
+
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+
+
+</RelativeLayout>
